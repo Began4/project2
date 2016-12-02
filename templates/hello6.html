@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<body>
+
+<style>
+/* Main carousel style */
+.carousel {
+    width: 100%;
+}
+
+/* Indicators list style */
+.article-slide .carousel-indicators {
+    bottom: 0;
+    left: 0;
+    margin-left: 5px;
+    width: 100%;
+}
+/* Indicators list style */
+.article-slide .carousel-indicators li {
+    border: medium none;
+    border-radius: 0;
+    float: left;
+    height: 54px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 5px !important;
+    margin-top: 0;
+    width: 100px;
+}
+/* Indicators images style */
+.article-slide .carousel-indicators img {
+    border: 2px solid #FFFFFF;
+    float: left;
+    height: 54px;
+    left: 0;
+    width: 100px;
+}
+/* Indicators active image style */
+.article-slide .carousel-indicators .active img {
+    border: 2px solid #428BCA;
+    opacity: 0.7;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+    $("#parisbutton").click(function(){
+        $.get("http://127.0.0.1:5984/emails/3109610f-ede6-432b-9e7c-6826bc830cee", function(data, status){
+		
+		$("#city").text(data.content);
+        });
+    });
+});
+
+
+</script>
+
+
+ <img src="http://www.clipartkid.com/images/44/clipartbest-com-2JDmK0-clipart.jpeg" class="img-fluid" alt="Responsive image"  width="10%" height="5%" ">
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Number 1</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                                <h1>
+                                    <strong>V for Vendetta</strong>
+                                </h1>
+                                
+                               
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                            </span>
+							
+                             <img src="http://www.gstatic.com/tv/thumb/movieposters/159693/p159693_p_v8_aa.jpg" class="img-fluid" alt="Responsive image"  width="30%" height="70%" ">
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>2005</strong>
+                                </h4>
+                                <p>Director:  James McTeigue </p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>IMDB Rating</strong>
+                                </h4>
+                                <p>8.2</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+	
+	
+<div class="carousel slide article-slide" id="article-photo-carousel">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner cont-slider">
+
+    <div class="item active">
+      <img alt="" title="" src="http://tinoschaedler.com/wp-content/uploads/vendetta.jpg">
+    </div>
+    <div class="item">
+      <img alt="" title="" src="https://fsmedia.imgix.net/55/ac/05/60/3298/48a5/a667/950275fac747/v-for-vendetta-decade-wachowskis-dark-knight-anonymous.png?rect=142,0,1447,724&dpr=2&auto=format,compress&q=75">
+    </div>
+    <div class="item">
+      <img alt="" title="" src="https://www.walldevil.com/wallpapers/a73/natalie-portman-women-movies-rain-actresses-v-for-vendetta.jpg">
+    </div>
+  </div>
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li class="active" data-slide-to="0" data-target="#article-photo-carousel">
+      <img alt="" src="http://tinoschaedler.com/wp-content/uploads/vendetta.jpg">
+    </li>
+    <li class="" data-slide-to="1" data-target="#article-photo-carousel">
+      <img alt="" src="https://fsmedia.imgix.net/55/ac/05/60/3298/48a5/a667/950275fac747/v-for-vendetta-decade-wachowskis-dark-knight-anonymous.png?rect=142,0,1447,724&dpr=2&auto=format,compress&q=75">
+    </li>
+    <li class="" data-slide-to="2" data-target="#article-photo-carousel">
+      <img alt="" src="https://www.walldevil.com/wallpapers/a73/natalie-portman-women-movies-rain-actresses-v-for-vendetta.jpg">
+    </li>
+    
+  </ol>
+</div>
+
+   <br>
+   <br>
+   <div style="float:left;width:300px;">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/lSA7mAHolAw" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div style="float:right;width:50%;">
+	<h3>Based on the graphic novel by Alan Moore, V for Vendetta takes place in an alternate vision of Britain in which a corrupt and abusive totalitarian government has risen to complete power. During a threatening run in with the secret police, an unassuming young woman named Evey (Natalie Portman) is rescued by a vigilante named V (Hugo Weaving) -- a caped figure both articulate and skilled in combat. V embodies the principles of rebellion from an authoritarian state, donning a mask of vilified would-be terrorist of British history Guy Fawkes and leading a revolution sparked by assassination and destruction. Evey becomes his unlikely ally, newly aware of the cruelty of her own society and her role in it. ~ Cammila Albertson, Rovi</h3>
+</div>
+
+<div style="clear:both"></div>
+	<h3>
+ </h3>
+
+
+
+</body>
+</html>
